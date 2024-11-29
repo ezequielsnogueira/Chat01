@@ -1,0 +1,345 @@
+
+@charset "ISO-8859-1";
+
+
+
+{
+margin: 0;
+padding: 0;
+}
+
+
+.btn
+{
+font-size: 20px;
+	width: 90%;
+	height: 30px;
+	collor: #fff;
+	background: RoyalBlue;
+	border: 1px solid #555;
+	border-radius: 5px;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	outline:0;
+	margin-top: 0px;
+  	line-height: 0px;
+
+
+}
+
+.btn:hover
+{
+	background: CornflowerBlue;
+	transition: background 1s;
+}
+
+
+
+body
+{
+width: 100vw; 
+height: 100vh;
+background: GhostWhite;
+margin: 0;
+padding: 0;
+
+}
+
+.aTable
+{
+width: 100%; 
+text-align: center;
+}
+.aTable thead
+{
+background: MidnightBlue;
+font-weght: bold;
+color:#fff;
+}
+.aTable th , .aTable td
+{
+padding: 7px;
+}
+.aTable tbody tr:nth-child(2n)
+{
+background: #ccc;
+}
+
+.bTable
+{
+width: 100%; 
+text-align: center;
+background: MidnightBlue;
+font-weght: bold;
+color:#fff;
+margin: 0px;
+border-radius: 5px;
+}
+.bTable th , .bTable td
+{
+padding: 3px;
+color:#fff;
+
+}
+
+
+
+.rTable
+{
+width: 100%; 
+text-align: center;
+}
+.rTable thead
+{
+background: MidnightBlue;
+font-weght: bold;
+color:#fff;
+}
+.rTable th , .rTable td
+{
+padding: 7px;
+
+}
+.rTable tbody tr:nth-child(2n)
+{
+background: #ccc;
+}
+
+.cTable
+{
+width: 100%; 
+text-align: center;
+}
+.cTable thead
+{
+background: MidnightBlue;
+font-weght: bold;
+color:#fff;
+}
+.cTable th , .cTable td
+{
+padding: 7px;
+}
+
+.chatTable
+{
+width: 100%; 
+text-align: left;
+}
+.chatTable thead
+{
+background: MidnightBlue;
+font-weght: bold;
+color:#fff;
+}
+.chatTable th , .rTable td
+{
+padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+.container
+{
+width: 100vw;
+height: 100vh;
+display: grid;	
+grid-template-areas: "l1c1 l1c2" "l2c1 l2c2" "l3c1 l3c2" ;
+grid-template-columns: 20vw 80vw ;
+grid-template-rows: 8vh 72vh 20vh ;
+}
+
+
+
+
+
+.nav-voltarSair
+{
+	
+background: MidnightBlue;
+grid-area: l1c1;
+margin: 1px;
+border-radius: 5px;
+height: 8vh;
+
+}
+
+.nav-usuarios
+{
+	
+background: GhostWhite;
+grid-area: l2c1;
+overflow: auto;
+height: 92vh;
+
+}
+
+.nav-usuariosMob
+{
+background: GhostWhite;
+grid-area: l2c1;
+overflow: auto;
+}
+
+.nav-menuPric
+{
+grid-area: l1c1;
+height: 100vh;
+width: 100%; 
+text-align: center;
+background: MidnightBlue;
+font-weght: bold;
+margin: 1px;
+border-radius: 5px;
+
+}
+
+.nav-menuPricInf
+{
+grid-area: l3c1;
+background: GhostWhite;
+
+}
+
+.nav-listArquivos
+{
+grid-area: l1c2;
+background: GhostWhite;
+overflow: auto;
+height: 100vh;
+}
+
+.nav-listArquivosB
+{
+grid-area: l1c2;
+background: GhostWhite;
+overflow: auto;
+height: 100vh;
+
+}
+
+.nav-listArquivosComp
+{
+grid-area: l1c2;
+display: flex;
+flex-direction: column-reverse;
+background: GhostWhite;
+height: 80vh;
+overflow: auto;
+}
+
+.nav-listArquivosCompMob
+{
+grid-area: l1c2;
+display: flex;
+flex-direction: column-reverse;
+background: GhostWhite;
+height: 80vh;
+overflow: auto;
+}
+
+.nav-listArquivosCompInf
+{
+grid-area: l3c2;
+background: GhostWhite;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 620px)
+{
+
+.container
+{
+font-size: 20px;
+grid-template-areas: "l1c1 l1c2" "l2c1 l2c2" "l3c1 l3c2" ;
+grid-template-columns: 100vw;
+grid-template-rows:  10% 80% 10%;
+}
+
+		
+	.nav-voltarSair
+	{
+	background: MidnightBlue;
+	grid-area: l1c1;
+	}
+	
+	.nav-menuPric
+	{
+	background: MidnightBlue;
+	grid-area: l1c1;
+	height: 100vh;
+	}
+	
+	.nav-usuarios
+	{
+		
+	background: GhostWhite;
+	grid-area: l2c1;
+	overflow: auto;
+	}
+	
+	.nav-usuariosMob
+	{
+	
+	display:none;
+	}
+	
+
+	
+	.nav-listArquivosComp
+	{
+	display:none;
+	}
+	
+	.nav-listArquivosCompMob
+	{
+	grid-area: l2c1;
+	display: flex;
+	flex-direction: column-reverse;
+	background: GhostWhite;
+	overflow: auto;
+	}
+	
+	.nav-listArquivosCompInf
+	{
+	grid-area: l3c1;
+	background: GhostWhite;
+	}
+	
+			.aTable 
+			{
+			display:none;
+			}
+			.rTable thead
+			{
+			display:none;
+			}
+			.rTable tbody td 
+			{
+			display: flex;
+			flex-direction: column;
+			}
+	
+	
+	
+
+	
+		
+	
+	
+	
+}
+
+

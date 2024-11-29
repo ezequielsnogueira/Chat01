@@ -1,0 +1,239 @@
+
+@charset "ISO-8859-1";
+
+{
+margin: 0;
+padding: 0;
+}
+
+
+input[type="submit"]
+{
+	
+	font-size: 20px;
+	width: 150px;
+	height: 30px;
+	collor: #fff;
+	background: DimGray;
+	border: 1px solid #555;
+	border-radius: 5px;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	outline:0;
+	margin-top: 20px;
+  	line-height: 0px;
+	
+	
+	
+	
+	
+	
+}
+
+input[type="submit"]:hover
+{
+	background: DarkGray;
+	transition: background 1s;
+}
+
+.login
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 320px;
+	height: 22px;
+	border-radius: 5px;
+}
+
+
+.titulo 
+{
+	text-align: center;
+ 	font-size: 50px;
+ 	color: GhostWhite;
+ 	margin-top: 70px;
+ 	line-height: 30px;
+ 
+ 
+  
+}
+
+
+.centro 
+{
+  text-align: center;
+  line-height: 0px;
+  margin-bottom: 40px;
+  
+}
+
+
+.direita 
+{
+  text-align: right;
+  
+}
+
+.centroBranco
+{
+  text-align: center;
+  color: #FFFFFF;
+  
+  
+}
+
+
+body
+{
+width: 100vw; 
+color: black;
+font-size: 20px;
+margin: 0;
+padding: 0;
+}
+
+.container
+{
+width: 100vw;
+height: 100vh;
+display: grid;	
+grid-template-areas: "a b c" "d e f" "g h i" ;
+grid-template-columns: 20vw 60vw 20vw;
+grid-template-rows: 10vh 80vh 10vh;
+
+
+}
+
+.nav-a
+{
+background: MidnightBlue;
+grid-area: a;
+
+}
+
+.nav-b
+{
+background: MidnightBlue;
+grid-area: b;
+
+
+
+}
+
+.nav-c
+{
+background: MidnightBlue;
+grid-area: c;
+
+}
+
+.nav-d
+{
+background: GhostWhite;
+grid-area: d;
+
+}
+
+.nav-e
+{
+background: GhostWhite;
+grid-area: e;
+}
+
+
+
+
+
+
+.nav-f
+{
+background: GhostWhite;
+grid-area: f;
+
+}
+
+
+.nav-g
+{
+background: MidnightBlue;
+grid-area: g;
+
+
+}
+
+.nav-h
+{
+background: MidnightBlue;
+grid-area: h;
+
+
+
+
+}
+
+.nav-i
+{
+background: MidnightBlue;
+grid-area: i;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 480px)
+{
+	
+	.container
+	{
+	font-size: 20px;
+	grid-template-areas: "b" "e" "h";
+	grid-template-columns: 1fr;
+	grid-template-rows: 20vh  60vh 20vh;
+	
+	}
+	
+
+	
+	.nav-a
+	{
+	display:none;
+	}
+	
+	.nav-c
+	{
+	display:none;
+	}
+	
+	.nav-d
+	{
+	display:none;
+	}
+	
+	.nav-f
+	{
+	display:none;
+	}
+	
+	.nav-g
+	{
+	display:none;
+	}
+	
+		
+	.nav-i
+	{
+	display:none;
+	}
+	
+	
+	
+	
+}
+
+
+
+
